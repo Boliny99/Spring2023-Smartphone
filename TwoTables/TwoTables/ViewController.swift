@@ -9,8 +9,15 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    let restaurant = ["Zaika", "Hot pot", "Zeeks Pizza", "Roti"]
-    let food = ["Food 1","Food 2", "Food 3"]
+    let restaurant = ["KFC", "Chipotle", "PandaExpress", "Zaika"]
+    
+    let food = [["Crispy Chicken Sandwich","Large Popcorn Nuggets", "Fries"],
+                ["Burrito","Bowl","Salad"],
+                ["Beijing Beef", "Orange Chicken", "Cho Mein"],
+                ["Biryani","Chicken Tikka Masala","Samosas"]
+    ]
+    
+    var menu : [String] = []
 
     
     @IBOutlet weak var tblViewTop: UITableView!
@@ -21,13 +28,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if tableView == tblViewTop {
             return restaurant.count
         } else {
-            return food.count
+            return menu.count
         }
         
         
@@ -40,15 +48,19 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             return cell
         } else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-            cell.textLabel?.text = food[indexPath.row]
-            
+            cell.textLabel?.text = menu[indexPath.row]
             return cell
-            
         }
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        if tableView == tblViewTop {
+            let selectedRow = indexPath.row
+            
+            menu = food[selectedRow]
+            
+            self.tblViewBottom.reloadData()
+        }
     }
 
 
