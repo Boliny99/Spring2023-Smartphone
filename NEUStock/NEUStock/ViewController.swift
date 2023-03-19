@@ -15,6 +15,11 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var lblStockPrice: UILabel!
     
+    @IBOutlet weak var lblStockCompany: UILabel!
+    
+    
+    @IBOutlet weak var lblStockWebsite: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -40,11 +45,15 @@ class ViewController: UIViewController {
             let symbol = stock["symbol"].stringValue
             let price = stock["price"].doubleValue
             let volume = stock["volume"].intValue
+            let name = stock["companyName"].stringValue
+            let web = stock["website"].stringValue
             
             print("Symbol = \(symbol)")
             print("price = \(price)")
             print("volume = \(volume)")
             self.lblStockPrice.text = "Price = \(price) $"
+            self.lblStockCompany.text = "\(name)"
+            self.lblStockWebsite.text = "\(web)"
             
         }
         

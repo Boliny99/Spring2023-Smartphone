@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -41,6 +42,22 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Company Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j03-ho-wJ4">
+                                <rect key="frame" x="146" y="591" width="122" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Website" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rbT-Fq-Dpd">
+                                <rect key="frame" x="137" y="660" width="160" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="OnA-MA-KnV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -49,21 +66,25 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zVF-gi-3Ge" secondAttribute="trailing" constant="20" id="2Gw-zl-yTv"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rPV-6S-oNY" secondAttribute="trailing" constant="20" id="7n8-T4-hgV"/>
                             <constraint firstItem="rPV-6S-oNY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="DQf-ZJ-FdW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rbT-Fq-Dpd" secondAttribute="trailing" constant="5" id="aP5-FL-4zn"/>
                             <constraint firstItem="hEr-9M-CJE" firstAttribute="top" secondItem="zVF-gi-3Ge" secondAttribute="bottom" constant="30" id="ayp-Vl-XNB"/>
                             <constraint firstItem="rPV-6S-oNY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="350" id="giV-MV-G09"/>
                             <constraint firstItem="zVF-gi-3Ge" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="iSu-xg-4Dx"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hEr-9M-CJE" secondAttribute="trailing" constant="20" id="ieE-4T-kYa"/>
                             <constraint firstItem="zVF-gi-3Ge" firstAttribute="top" secondItem="rPV-6S-oNY" secondAttribute="bottom" constant="30" id="shc-f0-fqP"/>
+                            <constraint firstItem="rbT-Fq-Dpd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="w4H-EZ-y2m"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="lblStockCompany" destination="j03-ho-wJ4" id="yLk-iB-y9m"/>
                         <outlet property="lblStockPrice" destination="hEr-9M-CJE" id="6Yb-T3-MnI"/>
+                        <outlet property="lblStockWebsite" destination="rbT-Fq-Dpd" id="qOe-lD-l5r"/>
                         <outlet property="txtStockSymbol" destination="rPV-6S-oNY" id="ke0-c4-x7d"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="20" y="108"/>
+            <point key="canvasLocation" x="18.840579710144929" y="107.8125"/>
         </scene>
     </scenes>
     <resources>
