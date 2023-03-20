@@ -16,6 +16,7 @@
 		38CC645B29C66F1B0027847C /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CC645929C66F1B0027847C /* TableViewCell.swift */; };
 		38CC645C29C66F1B0027847C /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38CC645A29C66F1B0027847C /* TableViewCell.xib */; };
 		38CC645E29C676AF0027847C /* ViewDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CC645D29C676AF0027847C /* ViewDetailsController.swift */; };
+		38CC648329C7B6C20027847C /* SetDetailsDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CC648229C7B6C20027847C /* SetDetailsDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		38CC645929C66F1B0027847C /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		38CC645A29C66F1B0027847C /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		38CC645D29C676AF0027847C /* ViewDetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDetailsController.swift; sourceTree = "<group>"; };
+		38CC648229C7B6C20027847C /* SetDetailsDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetDetailsDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				38CC645929C66F1B0027847C /* TableViewCell.swift */,
 				38CC645A29C66F1B0027847C /* TableViewCell.xib */,
 				38CC645D29C676AF0027847C /* ViewDetailsController.swift */,
+				38CC648229C7B6C20027847C /* SetDetailsDelegate.swift */,
 			);
 			path = SevenWonders;
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 			files = (
 				38CC644A29C66D700027847C /* ViewController.swift in Sources */,
 				38CC645B29C66F1B0027847C /* TableViewCell.swift in Sources */,
+				38CC648329C7B6C20027847C /* SetDetailsDelegate.swift in Sources */,
 				38CC644629C66D700027847C /* AppDelegate.swift in Sources */,
 				38CC644829C66D700027847C /* SceneDelegate.swift in Sources */,
 				38CC645E29C676AF0027847C /* ViewDetailsController.swift in Sources */,
