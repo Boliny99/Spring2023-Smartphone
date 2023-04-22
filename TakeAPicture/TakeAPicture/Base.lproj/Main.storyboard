@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TakeAPicture" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="brain.head.profile" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="2J3-Th-A22">
+                                <rect key="frame" x="10" y="67.333333333333343" width="373" height="303.33333333333326"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="ubB-4T-dA0"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H1r-lz-PUv">
+                                <rect key="frame" x="20" y="379" width="353" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="hGj-tq-Qv1"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Take A Picture"/>
+                                <connections>
+                                    <action selector="takeAPictureAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hZF-bg-IrN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2J3-Th-A22" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="KKZ-KJ-GuB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="H1r-lz-PUv" secondAttribute="trailing" constant="20" id="Z4G-gA-lsu"/>
+                            <constraint firstItem="H1r-lz-PUv" firstAttribute="top" secondItem="2J3-Th-A22" secondAttribute="bottom" constant="10" id="Z7Z-LZ-pYi"/>
+                            <constraint firstItem="H1r-lz-PUv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="aSt-JI-Vyf"/>
+                            <constraint firstItem="2J3-Th-A22" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="dFt-lj-zD2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2J3-Th-A22" secondAttribute="trailing" constant="10" id="sQ7-DU-Vt9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imgView" destination="2J3-Th-A22" id="KR4-sF-Rcm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="102" y="5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="brain.head.profile" catalog="system" width="120" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
